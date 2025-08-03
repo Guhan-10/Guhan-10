@@ -1,49 +1,25 @@
-SkinAlyze: Skin Lesion Classification Using CNN
-SkinAlyze is a deep learning-based skin lesion classification tool built on the HAM10000 dataset. It uses a Convolutional Neural Network (CNN) to categorize dermoscopic images into seven distinct types of skin conditions, including both benign and malignant lesions.
+# 👋 Hi, I'm Guhan
 
-Features:
->> Preprocesses and organizes the HAM10000 dataset by lesion class
->> Trains a CNN on over 5,000 curated dermoscopic images
->> Evaluates model performance using accuracy, loss, and classification metrics
->> Accepts user-uploaded images for on-the-fly diagnosis
->> Outputs the full lesion name and confidence score
->> Saves the trained model in .h5 format for later use or deployment
+I'm passionate about building intelligent systems and working with data to solve real-world problems. My primary areas of interest include Machine Learning, Data Science, Python development, and exploring cloud-based solutions.
 
-Supported Skin Lesion Types:
-Code	   Diagnosis	Category
-nv	     Melanocytic nevus (mole)	Benign
-mel	     Melanoma	Malignant
-bkl	     Benign keratosis-like lesion	Benign
-bcc	     Basal cell carcinoma	Malignant
-akiec	   Actinic keratosis / intraepithelial carcinoma	Malignant
-vasc	   Vascular lesion	Benign
-df	     Dermatofibroma	Benign
+---
 
-Usage (Google Colab):
-Mount Google Drive and upload the HAM10000 metadata and image files.
+## 💼 Areas of Interest
 
-Train the model using the provided notebook.
+- Machine Learning & Deep Learning  
+- Data Science & Analytics  
+- Python Programming  
+- Cloud Computing & Deployment  
 
-Upload a dermoscopic image using files.upload().
+---
 
-Call the prediction function:
+## 📚 Currently Exploring
 
+- Building end-to-end ML pipelines  
+- Model performance tuning and evaluation  
+- Cloud deployment of machine learning models  
+- Data visualization and storytelling with data  
 
-predict_uploaded_image()
+---
 
-Example output:
-Processing file: ISIC_0029305.jpg
-Predicted Type: Melanocytic nevus (mole)
-Confidence: 0.70
-
-File Structure:
-
-=> HAM10000_metadata.csv – Metadata with diagnosis labels
-=> HAM10000_images_part_1/ – Folder containing image dataset
-=> skin_cancer_model.h5 – Saved trained model
-=> skin_lesion_classifier.ipynb – Jupyter notebook with full workflow
-
-<!---
-Guhan-10/Guhan-10 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Thanks for visiting my profile!
