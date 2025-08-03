@@ -1,25 +1,59 @@
-# 👋 Hi, I'm Guhan
+SkinAlyze
+A CNN-Based Skin Lesion Classifier Using the HAM10000 Dataset
 
-I'm passionate about building intelligent systems and working with data to solve real-world problems. My primary areas of interest include Machine Learning, Data Science, Python development, and exploring cloud-based solutions.
+SkinAlyze is a deep learning project that classifies dermoscopic skin images into seven medical diagnostic categories. It leverages a Convolutional Neural Network (CNN) trained on the HAM10000 dataset to assist in identifying both benign and malignant skin conditions.
 
----
+Features
+Organized dataset into class-specific folders for streamlined model input
 
-## 💼 Areas of Interest
+Trained a CNN model on over 5,000 images of skin lesions
 
-- Machine Learning & Deep Learning  
-- Data Science & Analytics  
-- Python Programming  
-- Cloud Computing & Deployment  
+Evaluated model performance using training/validation accuracy and loss
 
----
+Generated classification reports and confusion matrices for performance analysis
 
-## 📚 Currently Exploring
+Enabled image upload and real-time prediction with diagnosis output
 
-- Building end-to-end ML pipelines  
-- Model performance tuning and evaluation  
-- Cloud deployment of machine learning models  
-- Data visualization and storytelling with data  
+Displayed full diagnostic labels with prediction confidence
 
----
+Saved trained model in .h5 format for reuse and deployment
 
-Thanks for visiting my profile!
+Supported Skin Lesion Types
+Code	Diagnosis	Category
+nv	Melanocytic nevus (mole)	Benign
+mel	Melanoma	Malignant
+bkl	Benign keratosis-like lesion	Benign
+bcc	Basal cell carcinoma	Malignant
+akiec	Actinic keratosis / intraepithelial carcinoma	Malignant
+vasc	Vascular lesion	Benign
+df	Dermatofibroma	Benign
+
+Usage (Google Colab)
+Mount your Google Drive and upload the dataset and metadata
+
+Train the model using the provided code
+
+Upload a dermoscopic image and run the prediction function:
+
+predict_uploaded_image()
+Sample output:
+Processing file: ISIC_0029305.jpg
+Predicted Type: Melanocytic nevus (mole)
+Confidence: 0.70
+Project Structure
+HAM10000_metadata.csv – Metadata including image IDs and diagnostic labels
+
+HAM10000_images_part_1/ – Directory containing dermoscopic images
+
+skin_cancer_model.h5 – Trained model file
+
+skin_lesion_classifier.ipynb – Jupyter Notebook with training and inference code
+
+Future Enhancements
+Integrate transfer learning using pretrained models (e.g., MobileNetV2)
+
+Add an interactive web interface (Gradio or Streamlit)
+
+Improve classification accuracy for underrepresented lesion types
+
+Convert the model to TensorFlow Lite for mobile and edge deployment
